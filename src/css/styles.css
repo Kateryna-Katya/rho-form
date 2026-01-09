@@ -1355,7 +1355,7 @@ a {
 
 .pages h1 {
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(1.9rem, 5vw, 3.5rem);
     color: var(--text);
     margin-bottom: 40px;
     background: linear-gradient(90deg, var(--text) 0%, var(--accent) 100%);
@@ -1417,4 +1417,10 @@ a {
 /* Оформим контейнер более узко для лучшей читаемости текста */
 .pages .container {
     max-width: 900px;
+}
+/* Фикс разрыва слов для SplitType */
+.word {
+    display: inline-block;
+    white-space: nowrap;
+    /* Запрещает перенос внутри слова */
 }
