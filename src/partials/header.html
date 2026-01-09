@@ -1,19 +1,44 @@
 <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__dot"></span> Rho-Form
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#tech" class="nav__link">Технологии</a></li>
+        <li><a href="#academy" class="nav__link">Обучение</a></li>
+        <li><a href="#insights" class="nav__link">Инсайты</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--header">Связаться</a>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="mobile-menu">
+  <div class="mobile-menu__inner">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+        <li><a href="#tech" class="mobile-nav__link">Технологии</a></li>
+        <li><a href="#academy" class="mobile-nav__link">Обучение</a></li>
+        <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+        <li><a href="#contact" class="mobile-nav__link">Связаться</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p>hello@rho-form.fit</p>
+      <div class="mobile-socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
