@@ -1345,3 +1345,76 @@ a {
         height: 200px;
     }
 }
+
+/* --- СТИЛИ ДЛЯ ЮРИДИЧЕСКИХ СТРАНИЦ --- */
+.pages {
+    padding: 160px 0 100px;
+    /* Отступ сверху, чтобы хедер не перекрывал */
+    min-height: 80vh;
+}
+
+.pages h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: var(--text);
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pages h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin: 40px 0 20px;
+}
+
+.pages p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.pages ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.pages li {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    position: relative;
+    list-style: none;
+    padding-left: 25px;
+}
+
+.pages li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.pages strong {
+    color: var(--text);
+}
+
+.pages a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.pages a:hover {
+    border-bottom-color: var(--accent);
+    text-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* Оформим контейнер более узко для лучшей читаемости текста */
+.pages .container {
+    max-width: 900px;
+}
