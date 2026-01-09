@@ -1,56 +1,410 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/rho-form/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rho-Form — Инновации на пальцах</title>
+
+<link rel="icon" type="image/svg+xml"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5L90 27.5V72.5L50 95L10 72.5V27.5L50 5Z' fill='none' stroke='%2300f5ff' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='15' fill='%2300f5ff'%3E%3Canimate attributeName='opacity' values='1;0.3;1' dur='2s' repeatCount='indefinite'/%3E%3C/circle%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script type="module" crossorigin src="/rho-form/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/rho-form/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/rho-form/assets/styles-BgK2wqwM.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__dot"></span> Rho-Form
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#tech" class="nav__link">Технологии</a></li>
+        <li><a href="#academy" class="nav__link">Обучение</a></li>
+        <li><a href="#insights" class="nav__link">Инсайты</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--header">Связаться</a>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
-
+<div class="mobile-menu">
+  <div class="mobile-menu__inner">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+        <li><a href="#tech" class="mobile-nav__link">Технологии</a></li>
+        <li><a href="#academy" class="mobile-nav__link">Обучение</a></li>
+        <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+        <li><a href="#contact" class="mobile-nav__link">Связаться</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p>hello@rho-form.fit</p>
+      <div class="mobile-socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="container hero__container">
+        <div class="hero__content">
+            <h1 class="hero__title">Инновации на пальцах.<br>Технологии нового поколения.</h1>
+            <p class="hero__subtitle">Передовая цифровая инфраструктура для тех, кто строит будущее. Воплотите мечты в
+                реальность с платформой года.</p>
+
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">
+                    Начать сейчас
+                    <i class="fa-solid fa-arrow-right-long" style="margin-left: 10px;"></i>
+                </a>
+                <a href="#about" class="btn btn--secondary">
+                    Узнать детали
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-down">
+        <div class="scroll-down__mouse">
+            <span></span>
+        </div>
+    </a>
+</section>
+<section id="about" class="about">
+    <div class="container">
+        <div class="about__header">
+            <span class="section-tag" data-aos="fade-up">Технология нового поколения</span>
+            <h2 class="about__title scramble-text">Переосмыслите подход к развитию</h2>
+            <p class="about__lead">Rho-Form — это не просто курсы. Это передовая цифровая инфраструктура, созданная для
+                того, чтобы вы могли оценить перспективы проекта и расширить горизонты своих возможностей.</p>
+        </div>
+
+        <div class="about__grid">
+            <div class="about-card about-card--large">
+                <div class="about-card__content">
+                    <h3 class="about-card__title">Решения, которые меняют правила игры</h3>
+                    <p class="about-card__text">Мы внедрили AI-инструменты для реальных задач, позволяя вам
+                        автоматизировать рутину и сфокусироваться на глобальных целях.</p>
+                </div>
+                <div class="about-card__visual">
+                    <div class="glow-orb"></div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card__icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3 class="about-card__title">Экспертная поддержка</h3>
+                <p class="about-card__text">Методологии, доказавшие эффективность в странах ЕС и Великобритании.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card__icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                <h3 class="about-card__title">Быстрый старт</h3>
+                <p class="about-card__text">Подключение к платформе занимает 2 минуты. Легко разобраться без опыта.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="tech" class="tech">
+    <div class="container">
+        <div class="tech__header">
+            <h2 class="tech__title scramble-text">Технологии, которые работают на вас</h2>
+            <p class="tech__subtitle">Мы объединили лучшие AI-инструменты для реальных задач в единую экосистему роста.
+            </p>
+        </div>
+
+        <div class="tech__nodes">
+            <div class="node-item">
+                <div class="node-item__circle">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="node-item__title">AI Интеграция</h3>
+                <p class="node-item__text">Практики, применимые уже сегодня для автоматизации ваших проектов.</p>
+            </div>
+
+            <div class="node-item">
+                <div class="node-item__circle">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="node-item__title">Стратегия роста</h3>
+                <p class="node-item__text">Развитие на базе инноваций и методологий, доказавших эффективность.</p>
+            </div>
+
+            <div class="node-item">
+                <div class="node-item__circle">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <h3 class="node-item__title">Пассивный доход</h3>
+                <p class="node-item__text">Технология для формирования стабильного дохода в цифровой среде.</p>
+            </div>
+
+            <div class="node-item">
+                <div class="node-item__circle">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="node-item__title">Безопасность</h3>
+                <p class="node-item__text">Ваши данные под защитой передовой цифровой инфраструктуры.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="innovations" class="infra">
+    <div class="container infra__grid">
+        <div class="infra__visual">
+            <div class="stack">
+                <div class="stack__layer stack__layer--ui" data-depth="4">
+                    <div class="stack__content">UI/UX Interface</div>
+                </div>
+                <div class="stack__layer stack__layer--ai" data-depth="3">
+                    <div class="stack__content">AI Neural Core</div>
+                </div>
+                <div class="stack__layer stack__layer--logic" data-depth="2">
+                    <div class="stack__content">Data Processing</div>
+                </div>
+                <div class="stack__layer stack__layer--base" data-depth="1">
+                    <div class="stack__content">Secure Foundation</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="infra__content">
+            <span class="section-tag">Инновационная архитектура</span>
+            <h2 class="infra__title">Передовая цифровая инфраструктура</h2>
+            <div class="infra__accordion">
+                <div class="infra-item active" data-layer="4">
+                    <h3>01. Интуитивный интеллект</h3>
+                    <p>Решения, которые меняют правила игры: интерфейс, подстраивающийся под ваш темп обучения.</p>
+                </div>
+                <div class="infra-item" data-layer="3">
+                    <h3>02. Нейронное ядро</h3>
+                    <p>Технология нового поколения: AI-инструменты для реальных задач, доступные 24/7.</p>
+                </div>
+                <div class="infra-item" data-layer="1">
+                    <h3>03. Абсолютная защита</h3>
+                    <p>Ваши данные под защитой протоколов, соответствующих стандартам Великобритании и ЕС.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="academy" class="academy">
+    <div class="container">
+        <div class="academy__header">
+            <span class="section-tag">Образовательная часть</span>
+            <h2 class="academy__title scramble-text">Постройте карьеру, которая работает на вас</h2>
+            <p class="academy__subtitle">Эксклюзивные методологии и инсайты от экспертов Rho-Form.</p>
+        </div>
+
+        <div class="academy__list">
+            <a href="#contact" class="academy-item" data-img="img/placeholder.png">
+                <div class="academy-item__info">
+                    <span class="academy-item__cat">Инновации</span>
+                    <h3 class="academy-item__name">AI-инструменты в разработке 2026</h3>
+                </div>
+                <div class="academy-item__meta">
+                    <span class="academy-item__date">15 Янв 2026</span>
+                    <div class="academy-item__arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+                </div>
+            </a>
+
+            <a href="#contact" class="academy-item" data-img="img/placeholder.png">
+                <div class="academy-item__info">
+                    <span class="academy-item__cat">Карьера</span>
+                    <h3 class="academy-item__name">Как стать Senior в Европе без опыта</h3>
+                </div>
+                <div class="academy-item__meta">
+                    <span class="academy-item__date">12 Янв 2026</span>
+                    <div class="academy-item__arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+                </div>
+            </a>
+
+            <a href="#contact" class="academy-item" data-img="img/placeholder.png">
+                <div class="academy-item__info">
+                    <span class="academy-item__cat">Технологии</span>
+                    <h3 class="academy-item__name">Архитектура пассивного дохода в IT</h3>
+                </div>
+                <div class="academy-item__meta">
+                    <span class="academy-item__date">08 Янв 2026</span>
+                    <div class="academy-item__arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="academy__footer">
+            <button class="btn btn--secondary">Смотреть все материалы</button>
+        </div>
+    </div>
+
+    <div class="academy-cursor-img">
+        <img src="img/placeholder.png" alt="Preview">
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact__grid">
+            <div class="contact__form-block">
+                <span class="section-tag">Связаться</span>
+                <h2 class="contact__title scramble-text">Готовы к инновациям?</h2>
+                <p class="contact__subtitle">Оставьте заявку, и наши эксперты помогут вам построить карьеру, которая
+                    работает на вас.</p>
+
+                <form id="contact-form" class="form">
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" placeholder="Email" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" name="phone" id="phone-input" class="form__input"
+                            placeholder="Телефон (только цифры)" required>
+                        <span class="form__error" id="phone-error">Допустимы только цифры</span>
+                    </div>
+
+                    <div class="form__captcha">
+                        <label class="form__label">Защита от ботов: сколько будет <span
+                                id="captcha-question"></span>?</label>
+                        <input type="number" id="captcha-answer" class="form__input" placeholder="Ваш ответ" required>
+                    </div>
+
+                    <div class="form__consent">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <span class="checkbox__checkmark"></span>
+                            <span class="checkbox__text">Я согласен на обработку персональных данных</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">Запросить доступ</button>
+
+                    <div id="form-success" class="form__success">
+                        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="success-text">
+                            <h3>Доступ к платформе открыт!</h3>
+                            <p>Спасибо! Мы свяжемся с вами в ближайшее время для бесплатной консультации.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact__info">
+                <div class="info-card">
+                    <h3 class="info-card__title">Центральный офис</h3>
+                    <div class="info-card__item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>82-84 Clerkenwell Rd, London EC1M 5RJ, UK</p>
+                    </div>
+                    <div class="info-card__item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+44 20 7946 0958</p>
+                    </div>
+                    <div class="info-card__item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>hello@rho-form.fit</p>
+                    </div>
+                    <div class="info-card__status">
+                        <span class="status-dot"></span>
+                        Платформа уже доступна в Великобритании
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo footer__logo">
+        <span class="logo__dot"></span> Rho-Form
       </a>
-    </p>
+      <p class="footer__desc">Переосмыслите подход к развитию. Инновационная технология обучения, доступная каждому.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__links">
+        <li><a href="#about">Главная</a></li>
+        <li><a href="#tech">Технологии</a></li>
+        <li><a href="#academy">Программы</a></li>
+        <li><a href="#insights">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="return.html">Refund Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html">Personal Data</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contacts">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>82-84 Clerkenwell Rd, London EC1M 5RJ, UK</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+442079460958">+44 20 7946 0958</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hello@rho-form.fit">hello@rho-form.fit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Rho-Form. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button id="accept-cookies" class="btn btn--primary">Принять</button>
+      </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
